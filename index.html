@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swachh Bharat Dashboard</title>
+
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      width: 80px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .movement {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .movement h2 {
+      color: #2e7d32;
+    }
+
+    .gallery {
+      margin-top: 40px;
+    }
+
+    .gallery h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .images img {
+      width: 30%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .images img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Swachh_Bharat_Abhiyan_Logo.svg/1200px-Swachh_Bharat_Abhiyan_Logo.svg.png" alt="Swachh Bharat Logo">
+    <h1>Swachh Bharat Dashboard</h1>
+  </header>
+
+  <!-- Movement Explanation -->
+  <section class="movement">
+    <h2>About Swachh Bharat Abhiyan</h2>
+    <p>
+      <strong>Swachh Bharat Abhiyan</strong> (Clean India Mission) was launched on <strong>October 2nd, 2014</strong> by
+      the Hon'ble Prime Minister of India, Narendra Modi, with the goal of making India clean and free of open defecation.
+    </p>
+    <p>
+      The mission emphasizes building toilets, proper waste disposal, and encouraging citizens to take responsibility
+      for the cleanliness of their surroundings. It's a nationwide movement that involves schools, colleges, local
+      bodies, and individuals working together for a cleaner, greener India.
+    </p>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <h2 style="text-align: center;">Cleanliness Drive Gallery</h2>
+    <div class="images">
+      <img src="https://images.unsplash.com/photo-1603570419997-9798a1c823cf?fit=crop&w=600&h=400" alt="Cleanliness 1">
+      <img src="https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?fit=crop&w=600&h=400" alt="Cleanliness 2">
+      <img src="https://images.unsplash.com/photo-1581093588401-1ba1cfa8e6f9?fit=crop&w=600&h=400" alt="Cleanliness 3">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Swachh Bharat Mission | Made with 🇮🇳 for a cleaner India</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Simple JS to show alert when image is clicked
+    const images = document.querySelectorAll('.images img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        alert('You clicked on a cleanliness drive image!');
+      });
+    });
+  </script>
+</body>
+</html>
+📌 Features of This Code
+Feature	Included ✅
+HTML structure	✅
+CSS for styling	✅
+JS interactivity	✅ (Image click alert)
+Responsive design	✅
+Image gallery	✅
+Movement explanation	✅
+All-in-one file	✅
+
+🧪 To Test This
+Open any code editor (VS Code / Notepad++)
+
+Paste the full code into a file named swachh-bharat.html
+
+Open the file in any web browser
+
+Would you like a version with live stats (like number of toilets built, waste collected, etc.) using JS? I can add that too.
+
+
+
+You said:
+create web dashbpard website code for a swach bharath with images and the movement explaintation for with integration for .html, css, js in one code
+
+ChatGPT said:
+Great! Here's a complete Swachh Bharat Dashboard in a single HTML file, with integrated:
+
+✅ HTML – Structure and content
+
+✅ CSS – Styling and layout
+
+✅ JavaScript – Simple interactivity (like stats and dynamic image handling)
+
+✅ Images – Linked from the web (so you don’t need to download anything)
+
+✅ Responsive design – Works on mobile and desktop
+
+✅ FULL CODE – Single File: swachh-bharat-dashboard.html
+📌 Just copy this into a .html file and open in your browser.
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swachh Bharat Dashboard</title>
+
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    .about {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 30%;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .stat-box h3 {
+      margin: 0;
+      font-size: 2em;
+      color: #2e7d32;
+    }
+
+    .gallery {
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 30%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 80%;
+      }
+
+      .stat-box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Swachh_Bharat_Abhiyan_Logo.svg/1200px-Swachh_Bharat_Abhiyan_Logo.svg.png" alt="Swachh Bharat Logo">
+    <h1>Swachh Bharat Dashboard</h1>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="container about">
+    <h2>About Swachh Bharat Abhiyan</h2>
+    <p><strong>Swachh Bharat Abhiyan</strong> (Clean India Mission) is a nationwide campaign launched by the Government of India on <strong>2nd October 2014</strong> to eliminate open defecation, improve solid waste management, and promote cleanliness across cities and villages in India.</p>
+    <p>It is inspired by Mahatma Gandhi's vision of a clean and hygienic India. The mission encourages active participation from all citizens, schools, municipalities, and NGOs to make India clean and green.</p>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="container stats">
+    <div class="stat-box">
+      <h3 id="toilets">0</h3>
+      <p>Toilets Built</p>
+    </div>
+    <div class="stat-box">
+      <h3 id="villages">0</h3>
+      <p>Open Defecation-Free Villages</p>
+    </div>
+    <div class="stat-box">
+      <h3 id="waste">0</h3>
+      <p>Waste Processed (tons)</p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="container gallery">
+    <h2>Cleanliness Drive Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1581091012184-3e88d6db8482?auto=format&fit=crop&w=800&q=60" alt="Clean Drive 1">
+    <img src="https://images.unsplash.com/photo-1616745303103-3ae59b4cb84c?auto=format&fit=crop&w=800&q=60" alt="Clean Drive 2">
+    <img src="https://images.unsplash.com/photo-1578926288418-3c4060a8d6c7?auto=format&fit=crop&w=800&q=60" alt="Clean Drive 3">
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Swachh Bharat Mission | Made with 🇮🇳 for a Cleaner India</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Fake stats (you can replace with real data from APIs later)
+    const stats = {
+      toilets: 110000000,
+      villages: 600000,
+      waste: 7500000
+    };
+
+    // Animate numbers
+    function animateValue(id, start, end, duration) {
+      const obj = document.getElementById(id);
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerText = Math.floor(progress * (end - start) + start).toLocaleString();
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    // Start animation when DOM is loaded
+    window.onload = () => {
+      animateValue("toilets", 0, stats.toilets, 2000);
+      animateValue("villages", 0, stats.villages, 2000);
+      animateValue("waste", 0, stats.waste, 2000);
+    };
+  </script>
+
+</body>
+</html>
